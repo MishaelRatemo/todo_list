@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Tasks</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <main>
+        <fieldset>
+            <h2>Welcome to Shopping List</h2>
+            <ul>
+                <h3>Functionalities</h3>
+                <li>&nbsp;<strong>Add</strong> Element With Data </li>
+                <li>&nbsp;Prevent submitting empty data </li>
+                <li>&nbsp;<strong>Update/Edit</strong> Added item</li>
+                <li>&nbsp;<strong>Delete</strong>  An item</li>
+                <li>&nbsp;Submit by <strong>clicking</strong> and <strong>pressing</strong> enter</li>
+            </ul>
+            <div>
+                <label for="">Enter task</label>
+                <input type="text" id="to-do-task" required>
+                <input  type="submit" value="Add item" id="add">
+             </div>
+            <hr>
+            <div id="results">
+                <h2>Your ToDO list </h2>
+                <div id="tasks" >
+                    <!-- Created elements comes here -->
+
+                </div>
+            </div>
+        </fieldset>
+        <div>
+        </div>
+    </main>
+    <script type="text/javascript" src="todo.js"></script>
+</body>
+</html>
