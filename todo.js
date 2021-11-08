@@ -17,11 +17,6 @@ getToDoItem.addEventListener('keyup',function(e) {
         }    
 });
 
-function deletes(clicked_id){
-    document.getElementById(clicked_id).addEventListener('click', getId);
-    
-}
-window.onload=deletes;
 //delete fxn
 function getId(clicked_id) {
     var remove= document.getElementById(clicked_id)
@@ -49,7 +44,18 @@ function myAddFunx()
 
         var makeSpan2=document.createElement('span');
         makeSpan2.innerHTML= '&#9940;';
-        makeSpan2.onclick="getId(this.id)";
+        // makeSpan2.onclick="getId(this.id)";
+        makeSpan2.onclick= function(){
+            // var remove= document.getElementById(itemID)
+            var userConfirm='';
+            if (userConfirm=confirm("You are about to delete "+ userInputs+" Proceed?")){
+                this.parentNode.remove(this);
+            }else{
+                alert('Delete Cancelled')
+            }
+            
+            
+        }
         
         // create node text to be added to the element created
         var text= document.createTextNode(itemID+'. ' + userInputs)
