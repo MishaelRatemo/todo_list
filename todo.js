@@ -48,7 +48,7 @@ function myAddFunx()
         makeSpan2.onclick= function(){
             // var remove= document.getElementById(itemID)
             var userConfirm='';
-            if (userConfirm=confirm("You are about to delete "+ userInputs+" Proceed?")){
+            if (userConfirm=confirm("You are about to delete this item, Proceed?")){
                 this.parentNode.remove(this);
             }else{
                 alert('Delete Cancelled')

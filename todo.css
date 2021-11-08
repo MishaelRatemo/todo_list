@@ -16,13 +16,13 @@ fieldset{
     /* left: 50%; */
     width: 60%;
     margin: auto;
-    background: repeating-conic-gradient( teal 10%,green  15%,white  10%);
+    background: repeating-conic-gradient( teal 10%,rgb(224, 222, 222)  10%);
     font-size: 2em;
     box-shadow: 40px 30px 40px 02px black;
 }
 fieldset h2{
     text-align: center;
-    color: wheat;
+    color: rgb(241, 163, 19);
 }
 
 ul{
